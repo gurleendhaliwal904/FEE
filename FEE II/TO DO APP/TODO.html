@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="20-7-26.css">
+</head>
+<body>
+    <div id="todo">
+        
+    </div>
+    <script src="20-7-26.js"></script>
+     further add serch complete and better ui also -->
+<!-- </body> -->
+<!-- </html> --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minimal Tasklist</title>
+  <link rel="stylesheet" href="20-7-26.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <main class="panel">
+      <header class="panel-header">
+        <div>
+          <h1 >Task manager</h1>
+        </div>
+      </header>
+
+      <section class="panel-actions">
+        <div class="search-box">
+          <input id="searchInput" type="search" placeholder="Search tasks..." />
+          <button id="clearSearch" type="button" aria-label="Clear search">×</button>
+        </div>
+
+        <form id="taskForm" class="task-form">
+          <input id="taskInput" type="text" placeholder="What needs to be done?" />
+          <button type="submit">Add task</button>
+        </form>
+      </section>
+
+      <div class="stats-bar">
+        <span id="remainingCount">0 tasks remaining</span>
+        <span id="completedCount">0 completed</span>
+      </div>
+
+      <div id="todo" class="task-list"></div>
+    </main>
+  </div>
+
+  <script src="20-7-26.js"></script>
+</body>
+</html>
